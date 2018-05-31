@@ -28,15 +28,15 @@ Web App Manifest 允许开发者控制 PWA 添加到桌面，允许定制桌面�
 ## 标准的支持度
 目前android chrome和ios safari都已经支持service worker，具体看下 Can I use 的统计（包括 PC 和 Mobile）</br>
 * App Manifest 的支持度达到 44.49%
-![avatar](../doc-imgs/webappmanifest.png)
+![avatar](./doc-imgs/webappmanifest.png)
 * Service Worker 的支持度达到 79.49%
-![avatar](../doc-imgs/sw.png)
+![avatar](./doc-imgs/sw.png)
 * Notifications API 的支持度达到 41.13%
-![avatar](../doc-imgs/notifications.png)
+![avatar](./doc-imgs/notifications.png)
 * Push API 的支持度达到 74.76%
-![avatar](../doc-imgs/push.png)
+![avatar](./doc-imgs/push.png)
 * Background Sync 的支持度达到 68.75%
-![avatar](../doc-imgs/backgroundsync.png)
+![avatar](./doc-imgs/backgroundsync.png)
 
 ## 什么是 Service Worker
 W3C 组织早在 2014 年 5 月就提出过 Service Worker 这样的一个 HTML5 API ，主要用来做持久的离线缓存。
