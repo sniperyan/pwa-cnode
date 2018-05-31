@@ -1,0 +1,32 @@
+{
+  "name": "test3",
+  "author": "wym",
+  "version": "1.0.0",
+  "cversion": "c052201",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "npm start",
+    "start": "wym-react-build start",
+    "test": "rm -rf dist && wym-react-build test",
+    "lint": "eslint --ext .jsx,.js src test/unit test/e2e/specs",
+    "fix": "eslint --fix src",
+    "dist": "npm run build",
+    "build": "rm -rf dist && wym-react-build build"
+  },
+  "dependencies": {
+    "antd": "^3.5.3",
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "wym-react-build": "^1.0.0"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,41 @@
+import {Tool} from '../util/tool';
+import * as types from '../constants/ActionTypes';
+import ajax from '../components/ajax';
+
+/**
+ * 用户登录
+ * @param accesstoken
+ * @returns {Function}
+ */
+export function login(accesstoken) {
+  return function(dispatch, getState) {
+    return ajax(dispatch, {
+      method: 'post', //请求类型
+      url: types.ACTION_PREFIX + '/api/v1/accesstoken/',
+      needLoad:false, //不要加载动画
+      data: {'accesstoken':accesstoken}, //发送给服务器的数据
+      success: function(ret) {
+        //登录成功，将用户信息存入localStorage，保存accesstoken
+        ret.data.accesstoken = accesstoken;
+        saveUser(ret.data);
+        alert('登录成功');
+      }, //请求成功后执行的方法
+      error: function(error) {
+        alert(error.data.error_msg);
+      }, //请求失败后执行的方法
+    });
+  };
+}
+/**
+ * 保存用户信息到localStorage
+ * @param user
+ */
+function saveUser(user) {
+  Tool.localItem('User', JSON.stringify(user));
+}
+
+
+
+
+
+
