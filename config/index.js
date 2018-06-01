@@ -80,7 +80,7 @@ module.exports = {
     //静态资源二级目录名称
     assetsSubDirectory: 'static',
     // CDN 地址
-    assetsPublicPath: '/pwa-demo/',
+    assetsPublicPath: '/',
     //favicon
     favicon: resolve('../public/favicon.ico'),
     appHtml: resolve('../public/index.html'),
@@ -121,6 +121,6 @@ module.exports = {
     // `publicUrl` is just like `publicPath`, but we will provide it to our app
     // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
     // Omit trailing slash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
-    publicUrl: '/pwa-demo/'
+    publicUrl: '/'
   }
 }
